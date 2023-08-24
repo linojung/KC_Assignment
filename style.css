@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&display=swap");
+@import "reset.css";
+
+:root {
+  /* colors */
+  --navy: rgb(38, 70, 83);
+  --light-navy: rgba(38, 70, 83, 0.6);
+  --mint: #2a9d8f;
+  --yellow: #e9c46a;
+  --light-orange: #f4a261;
+  --orange: #e76f51;
+  --white: #f6fafb;
+  --shadow: 0px 19px 16px -22px rgba(0, 0, 0, 0.4);
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  height: 100vh;
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--navy);
+}
+
+main {
+  width: 340px;
+  min-height: 500px;
+  padding: 50px 40px;
+  background-color: var(--white);
+  box-shadow: 0px 19px 16px -22px rgba(102, 92, 83, 0.75);
+  -webkit-box-shadow: 0px 19px 16px -22px rgba(102, 92, 83, 0.75);
+  -moz-box-shadow: 0px 19px 16px -22px rgba(102, 92, 83, 0.75);
+  border-radius: 30px;
+}
+
+header {
+  line-height: 1.2;
+  font-size: 20px;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header i {
+  color: var(--light-navy);
+  font-size: 14px;
+}
+
+header span {
+  font-weight: 700;
+}
+
+.ass__list {
+  margin-top: 60px;
+}
+.ass__list li a {
+  margin-bottom: 45px;
+  background-color: #fff;
+  color: var(--light-navy);
+  box-shadow: var(--shadow);
+  height: 50px;
+  border-radius: 25px;
+  text-align: center;
+  display: block;
+  line-height: 50px;
+}
+
+.ass__list li a:hover i {
+  transform: translateY(-20px) rotateZ(30deg) scale(1.1);
+}
+
+.ass__list li a i {
+  display: inline-block;
+  margin: 0 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--navy);
+  box-shadow: var(--shadow);
+  color: var(--white);
+  transform: translateY(-10px);
+  transition: all 0.3s ease-in-out;
+}
+
+.ass__list li:nth-child(2n + 1) {
+  transform: translateX(10px);
+}
+.ass__list li:nth-child(2n) {
+  transform: translateX(-10px);
+}
+
+.ass__list li:nth-child(3n + 2) i {
+  background-color: var(--mint);
+}
+.ass__list li:nth-child(3n + 3) i {
+  background-color: var(--light-orange);
+}
+.ass__list li:nth-child(3n + 4) i {
+  background-color: var(--orange);
+}
