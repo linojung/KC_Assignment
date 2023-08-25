@@ -89,12 +89,14 @@ header span {
   transform: translateX(-10px);
 }
 
-.ass__list li:nth-child(3n + 2) i {
+.ass__list li:nth-child(4n + 2) i {
   background-color: var(--mint);
 }
-.ass__list li:nth-child(3n + 3) i {
+.ass__list li:nth-child(4n + 3) i {
   background-color: var(--light-orange);
 }
-.ass__list li:nth-child(3n + 4) i {
+.ass__list li:nth-child(4n + 4) i {
   background-color: var(--orange);
 }
+.ass__list li:nth-child(4n + 5) i {
+  background-color: var(--navy);
