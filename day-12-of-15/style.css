@@ -26,11 +26,15 @@ body {
   background-color: #f6f6f6;
   min-height: 100vh;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   color: var(--black);
   font-family: "Nunito", sans-serif;
   font-weight: 500;
+}
+
+.screen__home {
+  margin-right: 50px;
 }
 
 @media screen and (max-width: 730px) {
@@ -50,6 +54,7 @@ body {
   overflow: hidden;
   border-radius: 24px;
   box-shadow: var(--main-shadow) rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease-in-out;
 }
 
 header {
@@ -159,18 +164,39 @@ header a {
   box-shadow: var(--mini-shadow) rgba(115, 115, 115, 0.4);
 }
 
-.playlist__current__playing {
+.now-playing {
   box-shadow: var(--mini-shadow) rgba(115, 115, 115, 0.4);
 }
 
 .playlist__img {
+  position: relative;
   width: 38px;
   height: 38px;
   border-radius: 15%;
   overflow: hidden;
 }
 
+.playlist__img::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: inherit;
+  height: inherit;
+  display: none;
+  content: "";
+  background: center / cover no-repeat url("img/wave.gif");
+  opacity: 0.5;
+}
+
+.now-playing .playlist__img::before {
+  display: block;
+}
+
 .playlist__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: inherit;
   height: inherit;
   object-fit: cover;
