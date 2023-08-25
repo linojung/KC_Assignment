@@ -1,77 +1,82 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>You Are Awesome!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>You Are Awesome!</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css">
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-  <main class="screen">
-    <div class="screen__top">
-      <i class="fas fa-times"></i>
-      <h2 class="screen__title">Playlist</h2>
-    </div>
-    <div class="current">
-      <div class="current__column">
-        <div class="current__thumbnail">
-          <i class="far fa-image"></i>
+  <body>
+    <main class="screen">
+      <div class="screen__top">
+        <i class="fas fa-times"></i>
+        <h2 class="screen__title">Playlist</h2>
+      </div>
+      <div class="current">
+        <div class="current__column">
+          <div class="current__thumbnail">
+            <i class="far fa-image"></i>
+          </div>
+        </div>
+        <div class="current__column">
+          <div class="current__title">Super star<br />Cool</div>
+          <div class="current__artist">by Beck (feat.Lonely Island)</div>
         </div>
       </div>
-      <div class="current__column">
-        <div class="current__title">Super star<br />Cool</div>
-        <div class="current__artist">by Beck (feat.Lonely Island)</div>
+      <div class="btns">
+        <button class="play__btn"><i class="fas fa-play"></i>Play</button>
+        <button class="like__btn"><i class="far fa-heart"></i></button>
+        <button class="add__btn"><i class="fas fa-plus"></i></button>
       </div>
-    </div>
-    <div class="btns">
-      <button class="play__btn"><i class="fas fa-play"></i>Play</button>
-      <button class="like__btn"><i class="far fa-heart"></i></button>
-      <button class="add__btn"><i class="fas fa-plus"></i></button>
-    </div>
-    <ul class="playlist">
-      <li class="playlist__row">
-        <div class="playlist__row__column">
-          <p class="music__thumbnail"></p>
-        </div>
-        <div class="playlist__row__column">
-          <span class="music__title">Night Dancer</span>
-          <i class="music__artist">Imase</i>
-        </div>
-      </li>
-      <li class="playlist__row">
-        <div class="playlist__row__column">
-          <p class="music__thumbnail"></p>
-        </div>
-        <div class="playlist__row__column">
-          <span class="music__title">Geometrical Dominator</span>
-          <i class="music__artist">Waterflame</i>
-        </div>
-      </li>
-      <li class="playlist__row">
-        <div class="playlist__row__column">
-          <p class="music__thumbnail"></p>
-        </div>
-        <div class="playlist__row__column">
-          <span class="music__title">In The Beginning</span>
-          <i class="music__artist">K'naan</i>
-        </div>
-      </li>
-      <li class="playlist__row">
-        <div class="playlist__row__column">
-          <p class="music__thumbnail"></p>
-        </div>
-        <div class="playlist__row__column">
-          <span class="music__title">OMG</span>
-          <i class="music__artist">Clay and Friends</i>
-        </div>
-      </li>
-    </ul>
-  </main>
-</body>
-
+      <ul class="playlist">
+        <li class="playlist__row">
+          <div class="playlist__row__column">
+            <p class="music__thumbnail"></p>
+          </div>
+          <div class="playlist__row__column">
+            <span class="music__title">Night Dancer</span>
+            <i class="music__artist">Imase</i>
+          </div>
+        </li>
+        <li class="playlist__row">
+          <div class="playlist__row__column">
+            <p class="music__thumbnail"></p>
+          </div>
+          <div class="playlist__row__column">
+            <span class="music__title">Geometrical Dominator</span>
+            <i class="music__artist">Waterflame</i>
+          </div>
+        </li>
+        <li class="playlist__row">
+          <div class="playlist__row__column">
+            <p class="music__thumbnail"></p>
+          </div>
+          <div class="playlist__row__column">
+            <span class="music__title">In The Beginning</span>
+            <i class="music__artist">K'naan</i>
+          </div>
+        </li>
+        <li class="playlist__row">
+          <div class="playlist__row__column">
+            <p class="music__thumbnail"></p>
+          </div>
+          <div class="playlist__row__column">
+            <span class="music__title">OMG</span>
+            <i class="music__artist">Clay and Friends</i>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <script src="../main.js"></script>
+  </body>
 </html>

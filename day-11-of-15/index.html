@@ -1,132 +1,131 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>You Are Awesome!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>You Are Awesome!</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-  <header>
-    <nav>
-      <i class="fas fa-bars"></i>
-      <span>Illustrator</span>
-      <i class="fas fa-shopping-bag"></i>
-    </nav>
-    <div class="search-bar">
-      <input type="text" placeholder="Search Illustrators...">
-      <button><i class="fas fa-search"></i></button>
-    </div>
-  </header>
-  <main class="main-screen">
-    <section>
-      <h2 class="section__title">Editor's Pick</h2>
-      <div class="section__content section__content__pick">
-        <div class="pick__column pick__img">
-          <img src="img/img1.jpg" alt="pickimg">
+  <body>
+    <header>
+      <nav>
+        <i class="fas fa-bars"></i>
+        <span>Illustrator</span>
+        <i class="fas fa-shopping-bag"></i>
+      </nav>
+      <div class="search-bar">
+        <input type="text" placeholder="Search Illustrators..." />
+        <button><i class="fas fa-search"></i></button>
+      </div>
+    </header>
+    <main class="main-screen">
+      <section>
+        <h2 class="section__title">Editor's Pick</h2>
+        <div class="section__content section__content__pick">
+          <div class="pick__column pick__img">
+            <img src="img/img1.jpg" alt="pickimg" />
+          </div>
+          <div class="pick__column pick__content">
+            <p class="section__sub-title pick__title">Everyday is Friday</p>
+            <i class="pick__author"> Mike Kus </i>
+            <ul class="pick__rating">
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+            </ul>
+            <div class="pick__tags">
+              <em class="pick__tag">Retro</em>
+              <em class="pick__tag">Branding</em>
+            </div>
+            <div class="pick__btns">
+              <i class="fas fa-bookmark pick__bookmark"></i>
+              <button class="pick__buy">BUY NOW</button>
+            </div>
+          </div>
         </div>
-        <div class="pick__column pick__content">
-          <p class="section__sub-title pick__title">
-            Everyday is Friday
-          </p>
-          <i class="pick__author">
-            Mike Kus
-          </i>
-          <ul class="pick__rating">
-            <li><i class="fas fa-star"></i></li>
-            <li><i class="fas fa-star"></i></li>
-            <li><i class="fas fa-star"></i></li>
-            <li><i class="fas fa-star"></i></li>
-            <li><i class="fas fa-star"></i></li>
+      </section>
+      <section class="no-padding">
+        <h2 class="section__title add-padding">Most Loved</h2>
+        <div class="section__content section__content__loved add-padding">
+          <ul class="loved__list">
+            <li class="loved__item">
+              <div class="loved__item__img">
+                <img src="img/img2.jpg" alt="loved" />
+              </div>
+              <div class="loved__item__rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star star-gray"></i>
+                <i class="fas fa-star star-gray"></i>
+              </div>
+            </li>
+            <li class="loved__item">
+              <div class="loved__item__img">
+                <img src="img/img3.jpg" alt="loved" />
+              </div>
+              <div class="loved__item__rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star star-gray"></i>
+              </div>
+            </li>
+            <li class="loved__item">
+              <div class="loved__item__img">
+                <img src="img/img6.jpg" alt="loved" />
+              </div>
+              <div class="loved__item__rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </li>
+            <li class="loved__item">
+              <div class="loved__item__img">
+                <img src="img/img5.jpg" alt="loved" />
+              </div>
+              <div class="loved__item__rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star star-gray"></i>
+                <i class="fas fa-star star-gray"></i>
+                <i class="fas fa-star star-gray"></i>
+                <i class="fas fa-star star-gray"></i>
+              </div>
+            </li>
           </ul>
-          <div class="pick__tags">
-            <em class="pick__tag">Retro</em>
-            <em class="pick__tag">Branding</em>
+        </div>
+      </section>
+      <section>
+        <h2 class="section__title">About the Illustrator</h2>
+        <div class="section__content section__content__about">
+          <div class="about__img">
+            <img src="img/mike.jpg" alt="artist" />
           </div>
-          <div class="pick__btns">
-            <i class="fas fa-bookmark pick__bookmark"></i>
-            <button class="pick__buy">BUY NOW</button>
+          <div class="about__text">
+            <h4 class="about__text__title section__sub-title">Mike Kus</h4>
+            <p class="about__text__content">
+              Mike is a UK based designer. He has a worldwide client roster and
+              his work is often featured in design related publications.
+            </p>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="no-padding">
-      <h2 class="section__title add-padding">Most Loved</h2>
-      <div class="section__content section__content__loved add-padding">
-        <ul class="loved__list">
-          <li class="loved__item">
-            <div class="loved__item__img">
-              <img src="img/img2.jpg" alt="loved">
-            </div>
-            <div class="loved__item__rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star star-gray"></i>
-              <i class="fas fa-star star-gray"></i>
-            </div>
-          </li>
-          <li class="loved__item">
-            <div class="loved__item__img">
-              <img src="img/img3.jpg" alt="loved">
-            </div>
-            <div class="loved__item__rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star star-gray"></i>
-            </div>
-          </li>
-          <li class="loved__item">
-            <div class="loved__item__img">
-              <img src="img/img6.jpg" alt="loved">
-            </div>
-            <div class="loved__item__rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-          </li>
-          <li class="loved__item">
-            <div class="loved__item__img">
-              <img src="img/img5.jpg" alt="loved">
-            </div>
-            <div class="loved__item__rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star star-gray"></i>
-              <i class="fas fa-star star-gray"></i>
-              <i class="fas fa-star star-gray"></i>
-              <i class="fas fa-star star-gray"></i>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section>
-      <h2 class="section__title">About the Illustrator</h2>
-      <div class="section__content section__content__about">
-        <div class="about__img">
-          <img src="img/mike.jpg" alt="artist">
-        </div>
-        <div class="about__text">
-          <h4 class="about__text__title section__sub-title">
-            Mike Kus
-          </h4>
-          <p class="about__text__content">
-            Mike is a UK based designer. He
-            has a worldwide client roster and his work is often featured in design related publications.
-          </p>
-        </div>
-      </div>
-    </section>
-  </main>
-</body>
-
+      </section>
+    </main>
+    <script src="../main.js"></script>
+  </body>
 </html>
