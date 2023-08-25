@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>You Are Awesome!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="screen screen__home">
+      <header>
+        <a href="#"><i class="fas fa-arrow-left"></i></a>
+        <a href="#"><i class="fas fa-search"></i></a>
+      </header>
+      <div class="artist">
+        <div class="artist__img">
+          <img src="img/falloutboy.jpg" alt="artist" />
+        </div>
+        <div class="artist__info">
+          <h2 class="artist__name">Fall Out Boy</h2>
+          <p class="artist__genre">Pop-punk, Pop-rock, Emo</p>
+        </div>
+      </div>
+      <div class="set__btns">
+        <span class="set__btn__shuffle">Shuffle</span>
+        <span class="set__btn__like">
+          <i class="fas fa-heart"></i>
+          695,866
+        </span>
+      </div>
+      <ul class="playlist">
+        <li>
+          <div class="playlist__img">
+            <img src="img/american_psycho.jpg" alt="item" />
+          </div>
+          <div class="playlist__info">
+            <div class="playlist__info__text">
+              <i class="playlist__info__text__artist">Fall Out Boy</i>
+              <span class="playlist__info__text__music">American Beauty</span>
+            </div>
+            <div class="playlist__info__more">
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+          </div>
+        </li>
+        <li class="playlist__current__playing">
+          <div class="playlist__img">
+            <img src="img/church.jpg" alt="item" />
+          </div>
+          <div class="playlist__info">
+            <div class="playlist__info__text">
+              <i class="playlist__info__text__artist">Fall Out Boy</i>
+              <span class="playlist__info__text__music"
+                >Stay Frosty Royal Milk Tea</span
+              >
+            </div>
+            <div class="playlist__info__more">
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="playlist__img">
+            <img src="img/so_much_(for)stardust.jpeg" alt="item" />
+          </div>
+          <div class="playlist__info">
+            <div class="playlist__info__text">
+              <i class="playlist__info__text__artist">Fall Out Boy</i>
+              <span class="playlist__info__text__music"
+                >so much for stardust</span
+              >
+            </div>
+            <div class="playlist__info__more">
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="playlist__img">
+            <img src="img/save_rock_and_roll.jpg" alt="item" />
+          </div>
+          <div class="playlist__info">
+            <div class="playlist__info__text">
+              <i class="playlist__info__text__artist">Fall Out Boy</i>
+              <span class="playlist__info__text__music">Young volcano</span>
+            </div>
+            <div class="playlist__info__more">
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="mini">
+        <div class="mini__music">
+          <i class="mini__music__artist"> Fall Out Boy </i>
+          <span class="mini__music__title"> Stay Frosty Royal Milk Tea </span>
+        </div>
+        <div class="mini__btns">
+          <i class="fas fa-angle-double-left"></i>
+          <i class="fas fa-play"></i>
+          <i class="fas fa-angle-double-right"></i>
+        </div>
+      </div>
+    </div>
+    <div class="screen screen__current">
+      <header>
+        <a href="#">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+        <a href="#">
+          <i class="fas fa-ellipsis-v"></i>
+        </a>
+      </header>
+      <div class="current__album">
+        <img src="img/church.jpg" alt="album" />
+      </div>
+      <div class="current__text">
+        <span class="current__music">
+          <em>Stay Frosty Royal Milk Tea</em>
+        </span>
+        <i class="current__artist">Fall Out Boy</i>
+      </div>
+      <div class="current__status">
+        <div class="current__status__time">
+          <span>1:56</span>
+          <span>2:51</span>
+        </div>
+        <div class="current__status__bar">
+          <div class="current__status__bar__empty"></div>
+          <div class="current__status__bar__filled">
+            <span class="current__status__bar__filled__dot"></span>
+          </div>
+        </div>
+      </div>
+      <div class="current__btns">
+        <i class="fas fa-retweet"></i>
+        <i class="fas fa-angle-double-left"></i>
+        <i class="fas fa-play"></i>
+        <i class="fas fa-angle-double-right"></i>
+        <i class="fas fa-random"></i>
+      </div>
+    </div>
+  </body>
+</html>
