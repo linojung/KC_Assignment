@@ -366,6 +366,7 @@ header a {
 
 .current__status__bar {
   position: relative;
+  cursor: pointer;
 }
 
 .current__status__bar__empty,
@@ -378,12 +379,22 @@ header a {
   background-color: var(--ground-gray);
 }
 
+@keyframes barFilling {
+  from {
+    width: 67%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 .current__status__bar__filled {
   top: 0;
   left: 0;
   width: 67%;
   position: absolute;
   background-color: var(--black);
+  animation: barFilling 40s linear infinite;
 }
 
 .current__status__bar__filled__dot {
