@@ -13,11 +13,12 @@ a {
   --gray: #8a8a8a;
   --light-gray: rgba(0, 0, 0, 0.3);
   --ground-gray: #f6f6f6;
+  --shadow-gray: rgba(115, 115, 115, 0.7);
   --white: #fff;
   /* sizes */
   --header-padding: 22px;
   --main-shadow: 0px 11px 56px -20px;
-  --mini-shadow: 0px 7px 27px -7px;
+  --mini-shadow: 9px 7px 39px -15px;
 }
 
 body {
@@ -61,7 +62,7 @@ header a {
   width: 73px;
   height: 73px;
   border-radius: 50%;
-  box-shadow: var(--mini-shadow) rgba(0, 0, 0, 0.2);
+  box-shadow: var(--mini-shadow) var(--shadow-gray);
 }
 
 .artist__img img {
@@ -96,6 +97,7 @@ header a {
 }
 
 .set__btns > * {
+  cursor: pointer;
   margin-left: 10px;
   display: block;
   line-height: 38px;
@@ -103,7 +105,7 @@ header a {
   width: 100px;
   height: 38px;
   border-radius: 19px;
-  box-shadow: var(--mini-shadow) rgba(0, 0, 0, 0.1);
+  box-shadow: var(--mini-shadow) var(--shadow-gray);
   font-size: 12px;
 }
 
@@ -120,20 +122,35 @@ header a {
   margin-left: 3px;
 }
 
+.set__btn__like {
+  transition: all 0.3s ease-in-out;
+}
+
+.set__btn__like:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
 .playlist {
   padding: 0 15px;
 }
 
 .playlist li {
+  cursor: pointer;
   padding: 15px 20px;
   display: flex;
   justify-content: space-between;
   /* box-shadow:var(--mini-shadow) rgba(0,0,0,0.1); */
   border-radius: 13px;
+  transition: all 0.4s ease-in-out;
+}
+
+.playlist li:hover {
+  box-shadow: var(--mini-shadow) rgba(115, 115, 115, 0.4);
 }
 
 .playlist__current__playing {
-  box-shadow: var(--mini-shadow) rgba(0, 0, 0, 0.1);
+  box-shadow: var(--mini-shadow) rgba(115, 115, 115, 0.4);
 }
 
 .playlist__img {
@@ -192,7 +209,7 @@ header a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  box-shadow: var(--mini-shadow) rgba(0, 0, 0, 0.3);
+  box-shadow: var(--mini-shadow) rgba(115, 115, 115, 0.5);
 }
 
 .mini__music {
@@ -201,11 +218,21 @@ header a {
   flex-direction: column;
   padding: 14px 0;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .mini__music__artist {
   font-size: 11px;
   color: var(--gray);
+}
+
+@keyframes miniTitleMove {
+  from {
+    transform: translateX(180px);
+  }
+  to {
+    transform: translateX(-190px);
+  }
 }
 
 .mini__music__title {
@@ -214,8 +241,7 @@ header a {
   font-weight: 500;
   text-transform: uppercase;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  animation: miniTitleMove 7s linear infinite;
 }
 
 .mini__btns {
@@ -239,7 +265,7 @@ header a {
   height: 210px;
   object-fit: cover;
   border-radius: 15px;
-  box-shadow: var(--mini-shadow) rgab(0, 0, 0, 0.2);
+  box-shadow: var(--mini-shadow) rgba(76, 23, 175, 1);
 }
 
 .current__text {
@@ -340,6 +366,10 @@ header a {
   margin: 0 auto;
 }
 
+.current__btns > * {
+  cursor: pointer;
+}
+
 .current__btns .active__true {
   color: var(--light-gray);
 }
@@ -350,7 +380,7 @@ header a {
 }
 
 .current__btn__main {
-  box-shadow: var(--mini-shadow) rgba(0, 0, 0, 0.2);
+  box-shadow: var(--mini-shadow) rgba(53, 53, 53, 1);
   display: flex;
   justify-content: center;
   align-items: center;
